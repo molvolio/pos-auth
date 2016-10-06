@@ -1,20 +1,20 @@
-Pint of Source tesztfeladat
+# Pint of Source tesztfeladat
 
-Regisztráció és autentikáció Ajax hívással
+## Regisztráció és autentikáció Ajax hívással
 
-Laravel keretrendszer
+Laravel 4.2
 
 adatbázis-beállítás:
-app/config/database.php
+`app/config/database.php`
 
 users tábla migráció:
-app/database/migrations/ könyvtár
+`app/database/migrations/` könyvtár
 
 (tesztadatbázis dump is mellékelve: pintofsource.sql)
 
 futtatás:
 
-{domen.hu}/public
+`{domen.hu}/public`
 
 
 
