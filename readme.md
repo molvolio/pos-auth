@@ -5,7 +5,7 @@ Regisztráció és autentikáció Ajax hívással
 Laravel keretrendszer
 
 adatbázis-beállítás:
-app/confog/database.php
+app/config/database.php
 
 users tábla migráció:
 app/database/migrations/ könyvtár
@@ -13,7 +13,8 @@ app/database/migrations/ könyvtár
 (tesztadatbázis dump is mellékelve: pintofsource.sql)
 
 futtatás:
-<domen.hu>/public
+
+{domen.hu}/public
 
 
 
