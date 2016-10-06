@@ -1,3 +1,3 @@
-<li>
-    <a href="{{ url('/logout') }}">Kijelentkezés</a>
-</li>
+<div class='alert-box alert' style='text-align: center;'>
+    Sikeresen bejelentkezett
+</div>

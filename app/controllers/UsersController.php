@@ -44,7 +44,10 @@ class UsersController extends BaseController {
 		);
 
 		if (Auth::attempt($user)) {
-			return View::make('dashboard');
+			$back = [];
+			$back[0] = View::make('dashboard')->render();
+			$back[1] = View::make('logout')->render();
+			return $back;
 		} else {
 			return null;
 		}

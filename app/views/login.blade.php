@@ -91,8 +91,8 @@ $(function() {
                 data: {"email": $("#email").val(), "pw": $("#password").val()},
                 success: function (data) {
                         if (data) {
-                            $("#maincontent").html("<div class='alert-box alert' style='text-align: center;'>Sikeresen bejelentkezett</div>");
-                            $("ul#loggedin").html(data);
+                            $("#maincontent").html(data[0]);
+                            $("ul#loggedin").html(data[1]);
                         } else alert ("Sikertelen bejelentkezés");
                     }
             });
