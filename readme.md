@@ -1,6 +1,7 @@
 ## Pint of Source tesztfeladat
 
 #### Regisztráció és autentikáció Ajax hívással
+#### Ország pénznem lekérdezés http://www.webservicex.net/country.asmx
 
 Laravel 4.2
 
