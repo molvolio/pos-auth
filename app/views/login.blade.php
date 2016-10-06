@@ -98,7 +98,6 @@ $(function() {
             });
         }
     });
-
 });
 
 function validateEmail(email) {

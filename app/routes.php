@@ -23,3 +23,5 @@ Route::get("/login", "UsersController@login");
 Route::post("/login", "UsersController@signin");
 
 Route::get("/logout", "UsersController@doLogout");
+
+Route::post("/webservice", "WebservicesController@getData");
