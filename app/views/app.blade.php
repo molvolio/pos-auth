@@ -64,9 +64,10 @@
            <div class="alert-box alert" style="text-align: center;">{{ Session::get("message") }}</div>
        @endif
 
-       <div id="maincontent">
-            @yield('content')
-       </div>
+       <div id = "maincontent">
+
+           @yield('content')
+       </div><div class = "dt-spinner"></div>
 
     </div>
 

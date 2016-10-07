@@ -85,16 +85,20 @@ $(function() {
         }
 
         else {
+            $(".dt-spinner").css("display", "block");
+            $("#maincontent").addClass("dim");
             $.ajax({
                 url: "{{ URL::to('login'); }}",
                 type: "post",
                 data: {"email": $("#email").val(), "pw": $("#password").val()},
                 success: function (data) {
-                        if (data) {
-                            $("#maincontent").html(data[0]);
-                            $("ul#loggedin").html(data[1]);
-                        } else alert ("Sikertelen bejelentkezés");
-                    }
+                    $(".dt-spinner").css("display", "none");
+                    $("#maincontent").removeClass("dim");
+                    if (data) {
+                        $("#maincontent").html(data[0]);
+                        $("ul#loggedin").html(data[1]);
+                    } else alert ("Sikertelen bejelentkezés");
+                }
             });
         }
     });

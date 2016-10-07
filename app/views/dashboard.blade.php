@@ -9,11 +9,15 @@
 
 <script>
     $("#getcur").click(function () {
+        $(".dt-spinner").css("display", "block");
+        $("#maincontent").addClass("dim");
         $.ajax({
             url: "{{ URL::to('/webservice'); }}",
             type: "post",
             data: {"country": $("#country").val() },
             success: function (data) {
+                $(".dt-spinner").css("display", "none");
+                $("#maincontent").removeClass("dim");
                 $("#curres").html(data);
                 $("#country").val("");
                 $("#country").focus();

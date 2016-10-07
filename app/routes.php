@@ -13,13 +13,17 @@
 
 Route::get('/', function()
 {
-	return Redirect::to('/login');
+	if(!Auth::Check()) {
+		return Redirect::to('/main');
+	} else {
+		return View::make('loggedin');
+	}
 });
 
 Route::get("/register", "UsersController@register");
 Route::post("/register", "UsersController@create");
 
-Route::get("/login", "UsersController@login");
+Route::get("/main", "UsersController@main");
 Route::post("/login", "UsersController@signin");
 
 Route::get("/logout", "UsersController@doLogout");

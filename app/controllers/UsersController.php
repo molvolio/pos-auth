@@ -31,9 +31,15 @@ class UsersController extends BaseController {
 		}
 	}
 
-	public function login()
+	public function main()
 	{
-		return View::make('login');
+		if(!Auth::Check()) {
+			return View::make('login');
+		} else {
+			return View::make('loggedin');
+;
+		}
+
 	}
 
 	public function signin()
